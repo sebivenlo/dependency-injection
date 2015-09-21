@@ -7,6 +7,7 @@ import java.net.URL;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
@@ -36,6 +37,7 @@ public class HelloControllerIT {
 	}
 
 	@Test
+	@Ignore
 	public void getHello() throws Exception {
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
 		assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));

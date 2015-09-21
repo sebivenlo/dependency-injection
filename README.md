@@ -15,7 +15,9 @@ The material assumes that Java is teached.
 * Run the application with java -jar build/libs/gs-spring-boot-0.1.0.jar
 * Navigate to localhost:8080/ in your browser to see the output of the implemented controller
 
+This application requires Java 1.8.
+
 # Playing around with the workshop-app
 
-The above mentioned workshop-app can be used to show and let experience the concept of Dependency Injection. Students should first import this project into an IDE (e.g. NetBeans or Eclipse) and inspect the current source-code.
-Concrete tasks that can be done are mentioned in the slides.
+The above mentioned workshop-app can be used to show and let experience the concept of Dependency Injection. Students should first open the project in NetBeans and inspect the current source-code.
+Afterwards they can play around with it, add new services and invent a business case around it.

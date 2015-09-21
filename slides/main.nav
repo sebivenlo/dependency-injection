@@ -26,8 +26,13 @@
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {3}{0}{9}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@partpages {1}{9}}
-\headcommand {\beamer@subsectionpages {5}{9}}
+\headcommand {\sectionentry {4}{Workshop}{10}{Workshop}{0}}
 \headcommand {\beamer@sectionpages {5}{9}}
-\headcommand {\beamer@documentpages {9}}
-\headcommand {\def \inserttotalframenumber {9}}
+\headcommand {\beamer@subsectionpages {5}{9}}
+\headcommand {\slideentry {4}{0}{10}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@partpages {1}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\beamer@documentpages {10}}
+\headcommand {\def \inserttotalframenumber {10}}

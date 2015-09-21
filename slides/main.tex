@@ -95,7 +95,7 @@ So:
 Dependency injection...
 
 \begin{itemize}
-\item makes dependencies the problems of someone different (be lazy!).
+\item makes dependencies the problems of someone different.
 \item takes responsibilities from classes (one problem less).
 \item transfers responsibility to create, maintain and inject dependencies to one central mechanism.
 \item is handled by a lot of frameworks so you can just use it out of the box without caring.
@@ -103,6 +103,23 @@ Dependency injection...
 \end{itemize}
 }
 
+%% WORKSHOP
+\section{Workshop} 
+\frame{\frametitle{Get started}
+
+This workshop contains a ready to go Java-application using the Spring framework. It lets you easily play around with Dependency Injection.
+
+\begin{itemize}
+\item Clone https://github.com/sebivenlo/dependency-injection.git
+\item Open a command line and cd into 'workshop'
+\item Execute './gradlew build'
+\item Execute 'java -jar build/libs/gs-spring-boot-0.1.0.jar'
+\end{itemize}
+
+The server-app should run now. It is available under the URL localhost:8080/
+Open the project in NetBeans now and see what happens. Feel free to play around.
+
+}
 
 %\section{Abschnitt Nr. 2} 
 %\subsection{Listen I}
