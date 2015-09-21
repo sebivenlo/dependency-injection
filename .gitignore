@@ -17,3 +17,15 @@ dependency-reduced-pom.xml
 README.html
 .idea
 *.iml
+
+slides/*.pdf
+slides/*.aux
+slides/*.lof
+slides/*.log
+slides/*.lot
+slides/*.fls
+slides/*.out
+slides/*.toc
+slides/*.nav
+slides/*.snm
+slides/*.synctex.gz
