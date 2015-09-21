@@ -21,3 +21,7 @@ This application requires Java 1.8.
 
 The above mentioned workshop-app can be used to show and let experience the concept of Dependency Injection. Students should first open the project in NetBeans and inspect the current source-code.
 Afterwards they can play around with it, add new services and invent a business case around it.
+
+# Credits
+
+Credits for the boilerplate of the workshop-app go to an official Spring Boot example by Pivotal (https://spring.io/guides/gs/spring-boot/)
