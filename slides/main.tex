@@ -1,4 +1,6 @@
 \documentclass{beamer}
+\usetheme{Szeged}
+\usecolortheme{beaver}
 
 \usepackage{listings}
 \usepackage{color}
@@ -24,7 +26,7 @@
 
 
 \begin{document}
-\title{Dependency injection}   
+\title{Dependency Injection}   
 \author{Jonas Verhoelen} 
 \date{\today} 
 
@@ -44,7 +46,7 @@
 
 %% THEORY
 \section{Theory} 
-\frame{\frametitle{What is Dependency injection?}
+\frame{\frametitle{What is Dependency Injection?}
 \begin{itemize}
 \item Design pattern and concept in Object oriented programming
 \item Get rid of hard-coded dependencies and replace by loose coupling
@@ -79,7 +81,7 @@ This was a minimal example for a simple aggregation between the classes ServeOrd
 
 Huh? What happened?\\
 We do not have to pass the Restaurant to the ServeOrderRunnable via the constructor anymore. The instance variable "restaurant" furthermore has a strange annotation above - @Autowired.\\
-It's very simple: the annotation tells the framework (could be Java Spring in this example) that this instance variable should be injected from the available services.
+It's very simple: the annotation tells the application (based on Java Spring in this example) that this instance variable should be injected from the available services.
 
 So:
 \begin{itemize}
@@ -92,7 +94,7 @@ So:
 
 \frame{\frametitle{Conclusion from the example}
 
-Dependency injection...
+Dependency Injection...
 
 \begin{itemize}
 \item makes dependencies the problems of someone different.
@@ -111,9 +113,9 @@ This workshop contains a ready to go Java-application using the Spring framework
 
 \begin{itemize}
 \item Clone https://github.com/sebivenlo/dependency-injection.git
-\item Open a command line and cd into 'workshop'
-\item Execute './gradlew build'
-\item Execute 'java -jar build/libs/gs-spring-boot-0.1.0.jar'
+\item Open a command line and execute \textbf{cd workshop}
+\item Execute \textbf{./gradlew build}
+\item Execute \textbf{java -jar build/libs/gs-spring-boot-0.1.0.jar}
 \end{itemize}
 
 The server-app should run now. It is available under the URL localhost:8080/
@@ -121,84 +123,20 @@ Open the project in NetBeans now and see what happens. Feel free to play around.
 
 }
 
-%\section{Abschnitt Nr. 2} 
-%\subsection{Listen I}
-%\frame{\frametitle{Aufz\"ahlung}
-%\begin{itemize}
-%\item Einf\"uhrungskurs in \LaTeX  
-%\item Kurs 2  
-%\item Seminararbeiten und Pr\"asentationen mit \LaTeX 
-%\item Die Beamerclass 
-%\end{itemize} 
-%}
-%
-%\frame{\frametitle{Aufz\"ahlung mit Pausen}
-%\begin{itemize}
-%\item  Einf\"uhrungskurs in \LaTeX \pause 
-%\item  Kurs 2 \pause 
-%\item  Seminararbeiten und Pr\"asentationen mit \LaTeX \pause 
-%\item  Die Beamerclass
-%\end{itemize} 
-%}
-%
-%\subsection{Listen II}
-%\frame{\frametitle{Numerierte Liste}
-%\begin{enumerate}
-%\item  Einf\"uhrungskurs in \LaTeX 
-%\item  Kurs 2
-%\item  Seminararbeiten und Pr\"asentationen mit \LaTeX 
-%\item  Die Beamerclass
-%\end{enumerate}
-%}
-%\frame{\frametitle{Numerierte Liste mit Pausen}
-%\begin{enumerate}
-%\item  Einf\"uhrungskurs in \LaTeX \pause 
-%\item  Kurs 2 \pause 
-%\item  Seminararbeiten und Pr\"asentationen mit \LaTeX \pause 
-%\item  Die Beamerclass
-%\end{enumerate}
-%}
-%
-%\section{Abschnitt Nr.3} 
-%\subsection{Tabellen}
-%\frame{\frametitle{Tabellen}
-%\begin{tabular}{|c|c|c|}
-%\hline
-%\textbf{Zeitpunkt} & \textbf{Kursleiter} & \textbf{Titel} \\
-%\hline
-%WS 04/05 & Sascha Frank &  Erste Schritte mit \LaTeX  \\
-%\hline
-%SS 05 & Sascha Frank & \LaTeX \ Kursreihe \\
-%\hline
-%\end{tabular}}
-%
-%
-%\frame{\frametitle{Tabellen mit Pause}
-%\begin{tabular}{c c c}
-%A & B & C \\ 
-%\pause 
-%1 & 2 & 3 \\  
-%\pause 
-%A & B & C \\ 
-%\end{tabular} }
-%
-%
-%\section{Abschnitt Nr. 4}
-%\subsection{Bl\"ocke}
-%\frame{\frametitle{Bl\"ocke}
-%
-%\begin{block}{Blocktitel}
-%Blocktext 
-%\end{block}
-%
-%\begin{exampleblock}{Blocktitel}
-%Blocktext 
-%\end{exampleblock}
-%
-%
-%\begin{alertblock}{Blocktitel}
-%Blocktext 
-%\end{alertblock}
-%}
-\end{document}
+\section{Workshop} 
+\frame{\frametitle{Coffee machine task}
 
+We want to build a coffee machine now in this application. The machine should have the following components:
+
+\begin{itemize}
+\item WaterContainer - contains water
+\item WaterHeater - heats the water from the container
+\item BeanContainer - contains coffee beans
+\item BeanGrinder - grinds beans from the container
+\item CoffeeBlender - mixes water with beans and outputs the product
+\end{itemize}
+
+Construct a smart device out of these using the @Autowired and @Component annotations. When calling the app via its URL, it should make a coffee and print out the coffee on the site.
+}
+
+\end{document}
