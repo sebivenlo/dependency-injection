@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{svg}
+\usepackage{MnSymbol,wasysym}
 
 \definecolor{pblue}{rgb}{0.13,0.13,1}
 \definecolor{pgreen}{rgb}{0,0.5,0}
@@ -21,7 +22,7 @@
   commentstyle=\color{pgreen},
   keywordstyle=\color{pblue},
   stringstyle=\color{pred},
-  basicstyle=\ttfamily
+  basicstyle=\small
 }
 
 
@@ -38,7 +39,7 @@
 \section{Introduction}
 \frame{\frametitle{What you can expect}
 \begin{itemize}
-\item Minimal theory about Dependency injection and all connected topics
+\item Theory about Dependency injection and connected topics
 \item Examples to quickly understand the concepts
 \item Tasks and exercises for the purpose of self-study
 \end{itemize}
@@ -49,10 +50,10 @@
 \frame{\frametitle{What is Dependency Injection?}
 \begin{itemize}
 \item Design pattern and concept in Object oriented programming
-\item Get rid of hard-coded dependencies and replace by loose coupling
+\item Way to get rid of hard-coded dependencies and replace by loose coupling
 \item Moves the resolution of dependencies from compile-time to runtime
 \item Very practical to create extendable and maintainable software, especially in big projects
-\item Part of a lot of Frameworks which take even more workload from you
+\item Part of a lot of frameworks which take even more workload from you
 \item ...something you \textbf{definitely have to} get familiar with!
 \end{itemize}
 }
@@ -97,10 +98,10 @@ So:
 Dependency Injection...
 
 \begin{itemize}
-\item makes dependencies the problems of someone different.
-\item takes responsibilities from classes (one problem less).
+\item makes dependencies the problems of someone else.
+\item takes responsibilities from classes (less problems for you).
 \item transfers responsibility to create, maintain and inject dependencies to one central mechanism.
-\item is handled by a lot of frameworks so you can just use it out of the box without caring.
+\item is handled by a lot of frameworks so you can just use it out of the box without caring a lot.
 \item also helps you testing, when complex dependencies are involved.
 \end{itemize}
 }
@@ -138,5 +139,13 @@ We want to build a coffee machine now in this application. The machine should ha
 
 Construct a smart device out of these using the @Autowired and @Component annotations. When calling the app via its URL, it should make a coffee and print out the coffee on the site.
 }
+
+
+\frame{\frametitle{Coffee machine task - possible solution}
+
+As always, there is more than one way to accomplish a task. In the repository you cloned, find the password-zipped \textbf{workshop-solution} folder (workshop-solution.zip).\\
+Your lecturer can provide you with the password at the end of the workshop/task. It contains a possible solution. Discuss with your colleagues or lecturers rather than trying to crack the password, in case you have problems. \smiley{}
+}
+% Password: pnAPhqMLxF4Zrq4Q6pj8fUQm
 
 \end{document}

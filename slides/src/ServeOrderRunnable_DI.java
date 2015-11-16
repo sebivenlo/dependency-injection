@@ -3,7 +3,7 @@ package restaurant;
 public class ServeOrderRunnable implements Runnable {
 
     @Autowired
-    private final Restaurant restaurant;
+    private final Restaurant rest;
 
     public ServeOrderRunnable() {
         // Became useless
@@ -11,7 +11,7 @@ public class ServeOrderRunnable implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Order: " + restaurant.getNextMeal() + "\n");
+        System.out.println("Order: " + rest.getNextMeal() + "\n");
     }
 
 }

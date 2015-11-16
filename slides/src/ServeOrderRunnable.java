@@ -2,15 +2,15 @@ package restaurant;
 
 public class ServeOrderRunnable implements Runnable {
 
-    private final Restaurant hostRestaurant;
+    private final Restaurant rest;
 
-    public ServeOrderRunnable(Restaurant hostRestaurant) {
-        this.hostRestaurant = hostRestaurant;
+    public ServeOrderRunnable(Restaurant rest) {
+        this.rest = rest;
     }
 
     @Override
     public void run() {
-        System.out.println("Serving order: " + hostRestaurant.getNextMeal() + "\n");
+        System.out.println("Serving order: " + rest.getNextMeal() + "\n");
     }
 
 }

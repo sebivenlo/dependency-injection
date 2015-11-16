@@ -3,8 +3,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.fontys</groupId>
-    <artifactId>dependency-injection-workshop</artifactId>
+    <groupId>nl.fontys.</groupId>
+    <artifactId>dependency-injection-workshop-solution</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -56,6 +56,6 @@
             </plugin>
         </plugins>
     </build>
-    <name>dependency-injection-workshop</name>
-    <description>Dependency injection workshop</description>
+    <name>dependency-injection-workshop-solution</name>
+    <description>Dependency injection workshop solution</description>
 </project>
